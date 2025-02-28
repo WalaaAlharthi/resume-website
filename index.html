@@ -4,50 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Walaa Alharthi</h1>
-        <p>Web Developer | Software Engineer</p>
-    </header>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Walaa Alharthi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
+    <section id="about" class="container mt-5">
         <h2>About Me</h2>
-        <p>I am a student at Jeddah University, 22 years old. I aim to complete my bachelor's degree and apply for a master's degree while achieving the highest grades..</p>
+        <p>I am a student at Jeddah University, 22 years old. I aim to complete my bachelor's degree and apply for a master's degree while achieving the highest grades.</p>
     </section>
 
-    <section id="education">
+    <section id="education" class="container mt-5">
         <h2>Education</h2>
         <ul>
-            <li><strong>Degree:</strong> Bachelor's in software engineering</li>
+            <li><strong>Degree:</strong> Bachelor's in Software Engineering</li>
             <li><strong>University:</strong> University of Jeddah</li>
             <li><strong>Year:</strong> 2021 - 2025</li>
         </ul>
     </section>
 
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Estate Map</h3>
-        <p>The proposed mobile application is designed to provide an efficient, intuitive, and comprehensive solution for users searching for real estate properties. By integrating real-time geographical data from the Google Maps API.</p>
-        <a href="https://github.com/EbtehalAlzahrani/EstateMap_Rep" target="_blank">View Project on GitHub</a>
-    </div>
-    <div class="project">
-        <h3>Health and Fitness Application</h3>
-        <p>Our project idea is a health and fitness application that offers multiple services in a chart and diagrams display with user-friendly interfaces to engage better with users.</p>
-        <a href="https://www.canva.com/design/DAGFFCOXb68/W8rs6dkiuDxIee-e3gkQHg/edit?utm_content=DAGFFCOXb68&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">View Project on Canva</a>
-    </div>
-</section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: alharthiw727@gmail.com</p>
-        <p>Social Media: <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div>
+            <h3>Estate Map</h3>
+            <p>The proposed mobile application is designed to provide an efficient, intuitive, and comprehensive solution for users searching for real estate properties. By integrating real-time geographical data from the Google Maps API.</p>
+            <a href="https://github.com/EbtehalAlzahrani/EstateMap_Rep" target="_blank">View Project on GitHub</a>
+        </div>
+        <div class="mt-4">
+            <h3>Health and Fitness Application</h3>
+            <p>Our project idea is a health and fitness application that offers multiple services in a chart and diagrams display with user-friendly interfaces to engage better with users.</p>
+            <a href="https://www.canva.com/design/DAGFFCOXb68/W8rs6dkiuDxIee-e3gkQHg/edit?utm_content=DAGFFCOXb68&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">View Project on Canva</a>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Walaa alharthi</p>
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="text-center p-3 bg-dark text-white mt-5">
+        <p>&copy; 2025 Walaa Alharthi</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
