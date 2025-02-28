@@ -1,0 +1,132 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+/* Education Section */
+#education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#education li {
+    padding: 8px 0;
+}
+
+/* Projects Section */
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 0;
+    color: #333;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
